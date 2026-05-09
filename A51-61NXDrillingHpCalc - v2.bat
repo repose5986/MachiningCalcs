@@ -137,7 +137,7 @@ $sync = {
 
 $toggleMode = {
     $Global:IsReverse = -not $Global:IsReverse
-    $btnToggle.Text = if($Global:IsReverse){"MODE: Find SFM/IPR"}else{"MODE: Find RPM/IPM"}
+    $btnToggle.Text = if($Global:IsReverse){"MODE: SFM/IPR"}else{"MODE: RPM/IPM"}
     $tSfm.ReadOnly = $Global:IsReverse; $tSfm.BackColor = if($Global:IsReverse){$readBg}else{$inputBg}
     $tIpr.ReadOnly = $Global:IsReverse; $tIpr.BackColor = if($Global:IsReverse){$readBg}else{$inputBg}
     $tRpm.ReadOnly = -not $Global:IsReverse; $tRpm.BackColor = if($Global:IsReverse){$inputBg}else{$readBg}
