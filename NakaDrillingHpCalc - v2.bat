@@ -158,7 +158,7 @@ $topPanel.Size = New-Object Drawing.Size(420, 60); $topPanel.BackColor = $topBar
 $form.Controls.Add($topPanel)
 
 $btnToggle = New-Object Windows.Forms.Button
-$btnToggle.Text = "MODE: Find RPM/IPM"; $btnToggle.Size = New-Object Drawing.Size(320, 35); $btnToggle.Location = New-Object Drawing.Point(40, 12)
+$btnToggle.Text = "MODE: RPM/IPM"; $btnToggle.Size = New-Object Drawing.Size(320, 35); $btnToggle.Location = New-Object Drawing.Point(40, 12)
 $btnToggle.FlatStyle = 'Flat'; $btnToggle.BackColor = $accent; $btnToggle.ForeColor = 'White'; $btnToggle.FlatAppearance.BorderSize = 0
 $btnToggle.Font = New-Object Drawing.Font('Segoe UI', 9, [Drawing.FontStyle]::Bold)
 $btnToggle.Add_Click($toggleMode); $topPanel.Controls.Add($btnToggle)
