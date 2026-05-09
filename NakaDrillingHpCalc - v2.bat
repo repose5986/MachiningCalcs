@@ -4,9 +4,6 @@ title Nakamura WY-100II Material Reference
 
 :: --- Print Reference in the FIRST window ---
 cls
-echo ===========================================================================
-echo            NAKAMURA-TOME WY-100II DRILLING Pu REFERENCE
-echo ===========================================================================
 powershell -NoProfile -Command ^
     "Write-Host '===========================================================================' -ForegroundColor Gray; " ^
     "Write-Host '             NAKAMURA-TOME WY-100II DRILLING HP CALCULATOR' -ForegroundColor Red; " ^

@@ -1,12 +1,12 @@
 @echo off
-title Makino A51-61NX Drilling HP Calculator
+title Makino A51-61NX Drilling Material Reference
 
 :START
 cls
 
 powershell -NoProfile -Command ^
     "Write-Host '===========================================================================' -ForegroundColor Gray; " ^
-    "Write-Host '         MAKINO A51-61NX HORIZONTAL MACHINING DRILLING HP CALCULATOR' -ForegroundColor Red; " ^
+    "Write-Host '    MAKINO A51-61NX HORIZONTAL MACHINING DRILLING HP Material Reference' -ForegroundColor Red; " ^
     "Write-Host '===========================================================================' -ForegroundColor Gray; " ^
     "Write-Host ''; " ^
     "Write-Host ' --- Pu REFERENCE LIST (hp/in3/min) ---' -ForegroundColor Red; " ^

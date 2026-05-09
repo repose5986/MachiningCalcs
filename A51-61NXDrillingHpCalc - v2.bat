@@ -1,15 +1,12 @@
 <# :
 @echo off
-title Nakamura WY-100II Material Reference
+title MAKINO A51-61NX HORIZONTAL MACHINING DRILLING HP REf
 
 :: --- Print Reference in the FIRST window ---
 cls
-echo ===========================================================================
-echo            NAKAMURA-TOME WY-100II DRILLING Pu REFERENCE
-echo ===========================================================================
 powershell -NoProfile -Command ^
     "Write-Host '===========================================================================' -ForegroundColor Gray; " ^
-    "Write-Host '             NAKAMURA-TOME WY-100II DRILLING HP CALCULATOR' -ForegroundColor Red; " ^
+    "Write-Host '         MAKINO A51-61NX HORIZONTAL MACHINING DRILLING HP CALCULATOR' -ForegroundColor Red; " ^
     "Write-Host '===========================================================================' -ForegroundColor Gray; " ^
     "Write-Host ''; " ^
     "Write-Host ' --- Pu REFERENCE LIST (hp/in3/min) ---' -ForegroundColor Red; " ^
