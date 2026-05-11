@@ -40,7 +40,7 @@ $Global:Mode = "Inside"
 $sync = {
     try {
         $r_arc = [double]$tArcR.Text
-        $r_tool = ([double]$tDia.Text / 2)
+        $r_tool = ([double]$tRad.Text)
         $f_lin = [double]$tLinF.Text
 
         if ($r_arc -gt 0 -and $r_tool -gt 0) {
@@ -93,7 +93,7 @@ function mkT($y, $v) {
     $t.Add_TextChanged($sync); $form.Controls.Add($t); return $t
 }
 
-mkL "Tool Diameter (in)" 40 100; $tDia = mkT 100 "0.500"
+mkL "Tool Radius (in)" 40 100; $tRad = mkT 100 "0.25"
 mkL "Linear Feed (IPM)" 40 140; $tLinF = mkT 140 "50.0"
 mkL "Arc Radius (in)" 40 180;   $tArcR = mkT 180 "0.750"
 
