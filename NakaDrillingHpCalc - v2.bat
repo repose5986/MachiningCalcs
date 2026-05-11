@@ -121,12 +121,12 @@ $sync = {
         $tKwReal.Text = [math]::Round($kw_real, 2).ToString() + " kW"
 
         # Status Update based on Realistic Load
-        if ($kw_real -ge 15.0) {
-            $lStatus.Text = "OVERLOAD - EXCEEDS 15kW"; $lStatus.ForeColor = $accent
-        } elseif ($kw_real -ge 11.0) {
-            $lStatus.Text = "WARNING - 11kW - 15kW 30 MIN ZONE"; $lStatus.ForeColor = $yellow
+        if ($kw_real -ge 11.18) {
+            $lStatus.Text = "OVERLOAD - EXCEEDS 11.18kW"; $lStatus.ForeColor = $accent
+        } elseif ($kw_real -ge 7.45) {
+            $lStatus.Text = "WARNING - 7.45kW - 11.18kW 30 MIN ZONE"; $lStatus.ForeColor = $yellow
         } else {
-            $lStatus.Text = "SAFE - 11kW CONTINUOUS ZONE"; $lStatus.ForeColor = $green
+            $lStatus.Text = "SAFE - 7.45kW CONTINUOUS ZONE"; $lStatus.ForeColor = $green
         }
     } catch {}
 }

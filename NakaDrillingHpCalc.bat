@@ -73,12 +73,12 @@ powershell -NoProfile -Command ^
     "Write-Host ' 85%% MOTOR HP:            ' -NoNewline -ForegroundColor White; Write-Host ('{0:N2} hp' -f $hpm) -ForegroundColor Cyan; " ^
     "Write-Host ' 85%% MOTOR KW:            ' -NoNewline -ForegroundColor White; Write-Host ('{0:N2} kW' -f $kw) -ForegroundColor Cyan; " ^
     "Write-Host '-------------------------------------------------------------------' -ForegroundColor Gray; " ^
-    "if ($kw -ge 15.0) { " ^
-    "  Write-Host ' >>> ' -NoNewline -ForegroundColor White; Write-Host 'RESULT: OVERLOAD - EXCEEDS 15kW PEAK' -NoNewline -ForegroundColor Red; Write-Host ' <<<' -ForegroundColor White " ^
-    "} elseif ($kw -ge 11.0) { " ^
-    "  Write-Host ' >>> ' -NoNewline -ForegroundColor White; Write-Host 'RESULT: WARNING - PEAK ZONE 30 MIN (11-15kW)' -NoNewline -ForegroundColor Yellow; Write-Host ' <<<' -ForegroundColor White " ^
+    "if ($kw -ge 11.18) { " ^
+    "  Write-Host ' >>> ' -NoNewline -ForegroundColor White; Write-Host 'RESULT: OVERLOAD - EXCEEDS 11.18kW PEAK' -NoNewline -ForegroundColor Red; Write-Host ' <<<' -ForegroundColor White " ^
+    "} elseif ($kw -ge 7.45) { " ^
+    "  Write-Host ' >>> ' -NoNewline -ForegroundColor White; Write-Host 'RESULT: WARNING - PEAK ZONE 30 MIN (7.45-11.18kW)' -NoNewline -ForegroundColor Yellow; Write-Host ' <<<' -ForegroundColor White " ^
     "} else { " ^
-    "  Write-Host ' >>> ' -NoNewline -ForegroundColor White; Write-Host 'RESULT: SAFE - WITHIN 11kW CONTINUOUS' -NoNewline -ForegroundColor Green; Write-Host ' <<<' -ForegroundColor White " ^
+    "  Write-Host ' >>> ' -NoNewline -ForegroundColor White; Write-Host 'RESULT: SAFE - WITHIN 7.45kW CONTINUOUS' -NoNewline -ForegroundColor Green; Write-Host ' <<<' -ForegroundColor White " ^
     "}; " ^
     "Write-Host '-------------------------------------------------------------------' -ForegroundColor Gray; "
 
