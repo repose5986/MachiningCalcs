@@ -14,8 +14,7 @@ $Scripts = @(
     @{ Name = "Turning Speed/Feed Calc";   Path = Join-Path $ScriptDir "TurningSpeedFeedCalc.bat" }
     @{ Name = "Drilling Speed/Feed Calc";  Path = Join-Path $ScriptDir "DrillingSpeedFeedCalc.bat" }
     @{ Name = "Arc Feed Rate Comp Calc";   Path = Join-Path $ScriptDir "ArcFeedRateCompCalc.bat" }
-    @{ Name = "Naka Drilling HP Calc";     Path = Join-Path $ScriptDir "NakaDrillingHpCalc - v2.bat" }
-    @{ Name = "A51-61NX Drilling HP Calc"; Path = Join-Path $ScriptDir "A51-61NXDrillingHpCalc - v2.bat" }
+    @{ Name = "Drilling HP Calc";     Path = Join-Path $ScriptDir "DrillingHpCalc.bat" }
     @{ Name = "EXIT";                      Path = $null }
 )
 
